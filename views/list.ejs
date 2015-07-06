@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	</head>
+	<body>
+		<nav class="navbar">
+			
+		</nav>
+		<div class="container">
+		<section id="section1" class="panel panel-default">
+
+			<div class="panel-heading">
+			<div class="container">
+			<h2><a href="http://localhost:8080/list">Refresh</a></h2>
+					<h3 class="panel-title">List of pics <b><%= bucket %></b></h3>
+	
+			
+    <ul type="square">
+		<% for(var i=0; i<fields.length; i++) { %>
+		 <li>  <a href="<%=adresy[i] %>"><%=names[i]%></a>
+		</li>	
+            <input id=delete type="button", onclick="location.href='http://localhost:8080/delete?klucz=<%= fields[i] %>'", value="Delete"/> <!-- Przycisk usuwania pliku przekierowuje on nas do strony 'http://localhost:8080/delete' z parametrami  -->
+		
+			
+			
+			<% } %>
+        
+			
+	</ul>
+	    	</div>
+		  	</div>
+	  		<div class="panel-body">
+	
+	
+		</body>
+</html>

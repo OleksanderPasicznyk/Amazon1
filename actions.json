@@ -1,0 +1,6 @@
+[
+	{"path": "/list", "action":"listobject"},
+	{"path":"/delete","action":"delete"},
+	{"path": "/success", "action":{"template": "success.ejs", "params":{"message":"Successfully!"}}},
+	{"path":"/","action":"createform"}
+]
